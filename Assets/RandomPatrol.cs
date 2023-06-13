@@ -11,7 +11,7 @@ public class RandomPatrol : MonoBehaviour
     public float minY;
     public float maxY;
 
-    Vector2 targetPosition;
+    Vector3 targetPosition = new Vector3();
 
     public float minSpeed;
     public float maxSpeed;
@@ -32,10 +32,20 @@ public class RandomPatrol : MonoBehaviour
     void Update()
     {
 
-        if ((Vector2)transform.position != targetPosition)
+        if ((Vector3)transform.position != targetPosition)
         {
             speed = Mathf.Lerp(minSpeed, maxSpeed, GetDifficultyPercent());
-            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
+            print(transform.position);
+            print(speed);
+            print(targetPosition);
+
+
+
+
+
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+
         } else {
             targetPosition = GetRandomPosition();
         }
@@ -46,7 +56,7 @@ public class RandomPatrol : MonoBehaviour
     Vector2 GetRandomPosition() {
         float randomX = Random.Range(minX, maxX);
         float randomY = Random.Range(minY, maxY);
-        return new Vector2(randomX, randomY);
+        return new Vector3(randomX, randomY);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
@@ -61,6 +71,8 @@ public class RandomPatrol : MonoBehaviour
     }
 
     float GetDifficultyPercent() {
+        print (Time.timeSinceLevelLoad);
+        print (secondsToMaxDifficulty);
         return Mathf.Clamp01(Time.timeSinceLevelLoad / secondsToMaxDifficulty);
 
     }
