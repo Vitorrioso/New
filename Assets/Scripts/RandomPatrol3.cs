@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RandomPatrol : MonoBehaviour
+public class RandomPatrol3 : MonoBehaviour
 {
 
     public float minX;
@@ -65,7 +65,7 @@ public class RandomPatrol : MonoBehaviour
         {
 //          SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Timer.stopTime = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
 
         }
 
