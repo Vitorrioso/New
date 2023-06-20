@@ -8,6 +8,7 @@
             bool moveAllowed;
             Collider2D col;
 
+            public GameObject selectionEffect;
 
             // Update is called once per frame
             void Update()
@@ -22,6 +23,8 @@
                         Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                         if (col == touchedCollider)
                         {
+                            Instantiate(selectionEffect, transform.position, Quaternion.identity);
+
                             moveAllowed = true;
                         }
 

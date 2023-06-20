@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class Timer : MonoBehaviour
+public class Timer1 : MonoBehaviour
 {
     public Text timeLevel_txt;
     private float timeLevel;
@@ -40,7 +40,7 @@ public class Timer : MonoBehaviour
         else
         {
 //            stopTime = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
         }
     }
 

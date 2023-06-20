@@ -8,6 +8,8 @@
             bool moveAllowed;
             Collider2D col;
 
+            public GameObject selectionEffect;
+
 
             // Start is called before the first frame update
             void Start()
@@ -25,9 +27,11 @@
 
                     if (touch.phase ==TouchPhase.Began)
                     {
-                        Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
+                       Collider2D touchedCollider = Physics2D.OverlapPoint(touchPosition);
                         if (col == touchedCollider)
                         {
+                            Instantiate(selectionEffect, transform.position, Quaternion.identity);
+                            
                             moveAllowed = true;
                         }
 
