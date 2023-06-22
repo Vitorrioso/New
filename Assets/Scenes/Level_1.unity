@@ -245,7 +245,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5160,7 +5160,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -10068,7 +10068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b39140b7c12114bb806b3c972aa281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionEffect: {fileID: 0}
+  selectionEffect: {fileID: 491611785}
 --- !u!212 &1150608296
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10352,7 +10352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b39140b7c12114bb806b3c972aa281, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectionEffect: {fileID: 0}
+  selectionEffect: {fileID: 689530343}
 --- !u!212 &1777586755
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10413,7 +10413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777586750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.12, y: 11.74, z: 0}
+  m_LocalPosition: {x: 15.38, y: 12.02, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10567,7 +10567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931784974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.4, y: 16.46, z: 0}
+  m_LocalPosition: {x: 10.18, y: 17.35, z: 0}
   m_LocalScale: {x: 3.2, y: 3.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10651,7 +10651,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c713c42b7dd42584e872e3eedfe05081, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7175825904f1052418871f98a98b8d25, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

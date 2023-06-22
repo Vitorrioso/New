@@ -69,7 +69,8 @@ public class RandomPatrol7 : MonoBehaviour
         {
 //          SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Timer.stopTime = true;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 4);
+            SceneManager.LoadScene(6);
+
 
         }
 
