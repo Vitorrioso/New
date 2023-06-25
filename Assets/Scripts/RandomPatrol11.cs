@@ -73,8 +73,8 @@ public class RandomPatrol11 : MonoBehaviour
     }
 
     float GetDifficultyPercent() {
-        print (Time.timeSinceLevelLoad);
-        print (secondsToMaxDifficulty);
+//        print (Time.timeSinceLevelLoad);
+//        print (secondsToMaxDifficulty);
         return Mathf.Clamp01(Time.timeSinceLevelLoad / secondsToMaxDifficulty);
 
     }
